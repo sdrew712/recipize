@@ -1,0 +1,132 @@
+/* #373d20, #717744, #abac7f, #fefefe, #080808 */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+  font-family: 'Comfortaa';
+  color: white;
+}
+
+h1{
+  font-size: 4rem;
+  padding-bottom: 4rem;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+.header{
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../recipe.jpg");
+}
+
+.header-text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15%;
+}
+
+nav{
+  background-color: #717744;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.site-title{
+  font-size: 2rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link{
+  font-size: 1.1rem;
+  padding-left: 4rem;
+}
+
+.intro{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #717744;
+  font-size: 2rem;
+}
+
+.home-p-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-p{
+  padding-bottom: 5rem;
+}
+
+.home-button{
+  border-radius: 20px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1.5rem;
+  border-style: none;
+  background-color: #abac7f;
+  color: white;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);;
+}

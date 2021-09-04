@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Book</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a href="./index.html" class="site-title">Recipize</a>
+    <div class="nav-container">
+      <a href="./recipe-book.html" class="nav-link">Create Recipes</a>
+      <a href="./find-recipes.html" class="nav-link">Find Recipes</a>
+    </div>
+  </nav>
+
+  <div id="recipe-book">
+    <div id="header">
+      <h1>Recipe Book</h1>
+      <h3>Add your own recipes!</h3>
+    </div>
+
+    <form id="recipe-input">
+      Recipe name: <input type="text" id="name-input">
+      Ingredients: <input type="text" id="ingredients-input">
+      Instructions: <input type="text" id="instructions-input">
+      <button>Create recipe</button>
+    </form>
+  </div>
+
+  <div id="recipes-container">
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
