@@ -26,6 +26,13 @@ function displayRecipe(arr){
   }
 }
 
+const deleteRecipe = (e) => {
+  axios.delete(`http://localhost:4000/api/recipe/${e.target.id.value}`)
+    .then((res) => {
+      displayRecipe(res.data);
+    });
+}
+
 recipeInput.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -37,7 +44,7 @@ recipeInput.addEventListener('submit', (e) => {
   
   axios.post("http://localhost:4000/api/recipe", newRecipeInfo)
     .then(res => {
-      // console.log(res.data);
+      console.log(res.data);
       displayRecipe(res.data);
     });
 

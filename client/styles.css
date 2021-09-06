@@ -22,7 +22,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -62,11 +61,21 @@ h1{
 
 h2{
   font-size: 3rem;
+  padding-bottom: 4rem;
 }
 
 h3{
   font-size: 2rem;
-  padding-bottom: 2rem;
+}
+
+hr{
+  height: 2px;
+  border-style: none;
+  border-radius: 10px;
+  width: 15%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  background-color: #f9fad2;
 }
 
 .header{
@@ -112,8 +121,10 @@ a:hover{
 
 .intro{
   height: 100vh;
-  background-color: #dadba2 ;
-  color: #717744;
+  background-color: #9da36d ;
+  color: #373d20;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -122,6 +133,8 @@ a:hover{
 }
 
 .card-container{
+  padding-top: 2rem;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
@@ -130,7 +143,25 @@ a:hover{
   border: 2px solid #373d20;
   border-radius: 10px;
   width: 20rem;
+  height: 20rem;
   padding: 2rem;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card:hover{
+  border: 2px solid #f9fad2;
+}
+
+#card-1{
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../images/food-prep.jpg");
+}
+
+#card-2{
+  background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../images/digital-recipe.jpg");
 }
 
 .get-started{
@@ -155,16 +186,11 @@ img{
   flex-grow: 1;
 }
 
-.home-h2{
+.home-text{
   padding-bottom: 2rem;
 }
 
-.home-desc-text{
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-}
-
-.home-button{
+button{
   font-family: 'Comfortaa';
   border-radius: 20px;
   padding: 1rem 1.5rem 1rem 1.5rem;
@@ -178,4 +204,39 @@ img{
 button:hover{
   border: solid #abac7f;
   color: #abac7f;
+}
+
+.page-header{
+  background-color: #9da36d ;
+  color: #373d20;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#recipe-book{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #717744;
+  color: #f9fad2;
+}
+
+#recipe-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#recipe-input > input {
+  width: 25%;
+  margin-bottom: 2rem;
+}
+
+#ingredients-input, #instructions-input{
+  height: 8rem;
 }

@@ -1,3 +1,6 @@
+let recipeId = 1;
+const recipeList = [];
+
 module.exports = {
   displayRecipe: (req, res) => {
     const { name, ingredients, instructions } = req.body;
@@ -12,7 +15,7 @@ module.exports = {
       id: recipeId
     }
 
-    console.log(newRecipe);
+    // console.log(newRecipe);
 
     recipeList.push(newRecipe);
 
