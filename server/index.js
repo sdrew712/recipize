@@ -14,6 +14,10 @@ app.use('/js', express.static(path.join(__dirname, '../client/main.js')))
 
 app.use('/getRecipe', express.static(path.join(__dirname, '../client/getRecipe.js')))
 
+app.get("/", function(req, res){
+  res.sendFile(path.join(__dirname, "../client/index.html"));
+});
+
 app.post("/api/recipe", controller.displayRecipe)
 
 app.delete("/api/recipe/:id", controller.deleteRecipe)
