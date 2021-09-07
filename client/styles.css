@@ -88,9 +88,11 @@ hr{
 
 .header-text{
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 15%;
+  position: relative;
+  top: 30%;
 }
 
 nav{
@@ -117,6 +119,10 @@ a:hover{
 .nav-link{
   font-size: 1.1rem;
   padding-left: 4rem;
+}
+
+.home-header{
+  padding-bottom: 2rem;
 }
 
 .intro{
@@ -223,6 +229,9 @@ button:hover{
   padding-bottom: 8rem;
   background-color: #717744;
   color: #f9fad2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #recipe-input{
@@ -233,8 +242,12 @@ button:hover{
 }
 
 #recipe-input > input {
-  width: 25%;
+  width: 100%;
   margin-bottom: 2rem;
+}
+
+.recipe > p{
+  padding-bottom: 2rem;
 }
 
 #ingredients-input, #instructions-input{
