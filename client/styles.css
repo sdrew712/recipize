@@ -262,7 +262,7 @@ button:hover{
   height: 8rem;
 }
 
-.recipe-display{
+#recipe-display{
   background-color: #9da36d;
   color: #f9fad2;
 }

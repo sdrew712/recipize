@@ -45,7 +45,6 @@ recipeInput.addEventListener('submit', (e) => {
   
   axios.post("http://localhost:4000/api/recipe", newRecipeInfo)
     .then(res => {
-      console.log(res.data);
       displayRecipe(res.data);
     });
 

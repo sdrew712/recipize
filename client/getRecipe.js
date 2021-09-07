@@ -43,7 +43,6 @@ async function displayRandomRecipe(){
   }
 
   ingredientsElement.innerHTML = "Ingredients: " + ingredients;
-  // console.log({ ingredients })
   instructionsElement.innerHTML = "Instructions: " + recipe.strInstructions
   
   bannerElement.style.backgroundImage = `linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url('${recipe.strMealThumb}')`
