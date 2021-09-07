@@ -218,7 +218,7 @@ button:hover{
   justify-content: center;
 }
 
-#recipe-book{
+.recipe-book{
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-color: #717744;
@@ -239,4 +239,15 @@ button:hover{
 
 #ingredients-input, #instructions-input{
   height: 8rem;
+}
+
+.recipe-display{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #717744;
+  color: #f9fad2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

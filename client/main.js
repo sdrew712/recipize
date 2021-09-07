@@ -4,6 +4,7 @@ const ingredientsInput = document.getElementById("ingredients-input")
 const instructionsInput = document.getElementById("instructions-input")
 const recipesContainer = document.getElementById("recipes-container")
 
+
 function displayRecipe(arr){
   while(recipesContainer.firstChild){
     recipesContainer.removeChild(recipesContainer.firstChild)

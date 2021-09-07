@@ -36,5 +36,9 @@ module.exports = {
     recipeList.splice(indexToDelete, 1);
 
     res.status(200).send(recipeList)
+  },
+
+  getRecipe : (req, res) => {
+
   }
 }
