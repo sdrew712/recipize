@@ -48,7 +48,6 @@ table {
 	border-spacing: 0;
 }
 
-
 body{
   font-family: 'Comfortaa';
   color: #f9fad2;
@@ -66,6 +65,10 @@ h2{
 
 h3{
   font-size: 2rem;
+}
+
+p{
+  line-height: 1.5rem;
 }
 
 hr{
@@ -208,15 +211,15 @@ button{
 }
 
 button:hover{
-  border: solid #abac7f;
-  color: #abac7f;
+  border: solid #373d20;
+  color: #373d20;
 }
 
 .page-header{
-  background-color: #9da36d ;
-  color: #373d20;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  background-color: #9da36d ;
+  color: #373d20;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -225,9 +228,8 @@ button:hover{
 }
 
 .recipe-book{
-  padding-top: 8rem;
   padding-bottom: 8rem;
-  background-color: #717744;
+  background-color: #9da36d ;
   color: #f9fad2;
   display: flex;
   flex-wrap: wrap;
@@ -239,11 +241,17 @@ button:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 1.25rem;
 }
 
 #recipe-input > input {
-  width: 100%;
+  width: 150%;
+  margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+#recipe-input > button{
+  margin-top: 2rem;
 }
 
 .recipe > p{
@@ -255,12 +263,66 @@ button:hover{
 }
 
 .recipe-display{
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background-color: #717744;
+  background-color: #9da36d;
   color: #f9fad2;
+}
+
+#get-recipes-header > h3{
+  padding-bottom: 6rem;
+}
+
+#recipe-input > button{
+  background-color: #9da36d;
+}
+
+.delete-button{
+  background-color: #9da36d;
+}
+
+#get-recipes-header > button{
+  background-color: #9da36d;
+}
+
+#get-recipes-header{
+  height: 100vh;
+  background-color: #9da36d ;
+  color: #373d20;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#new-recipe-container{
+  display: none;
+}
+
+#banner{
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-align: center;
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+
+#recipe-contents{
+  padding: 8rem 8rem 4rem 8rem;
+}
+
+#recipe-contents > h3, p, iframe{
+  padding-bottom: 2rem;
+}
+
+#yt-embed-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8rem;
 }

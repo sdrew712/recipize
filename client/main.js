@@ -13,7 +13,7 @@ function displayRecipe(arr){
   for (let i = 0; i < arr.length; i++){
     const newRecipe = document.createElement("div");
 
-    newRecipe.innerHTML = `<p>${arr[i].name}</p><p>${arr[i].ingredients}</p><p>${arr[i].instructions}</p><button class="delete-button value="${arr[i].id}">Delete</button><h1>`
+    newRecipe.innerHTML = `<p>Name: ${arr[i].name}</p><p>Ingredients: ${arr[i].ingredients}</p><p>Instructions: ${arr[i].instructions}</p><button class="delete-button value="${arr[i].id}">Delete</button><h1>`
 
     newRecipe.className = "recipe"
 
