@@ -18,4 +18,8 @@ app.post("/api/recipe", controller.displayRecipe)
 
 app.delete("/api/recipe/:id", controller.deleteRecipe)
 
-app.listen(4000, () => console.log("Server running on 4000"));
+const port = process.env.PORT || 4005;
+
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+})
