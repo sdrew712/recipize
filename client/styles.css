@@ -245,7 +245,7 @@ button:hover{
 }
 
 #recipe-input > textarea {
-  /* width: 150%; */
+  width: 150%;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
