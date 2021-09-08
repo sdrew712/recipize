@@ -10,6 +10,7 @@ function displayRecipe(arr){
     recipesContainer.removeChild(recipesContainer.firstChild)
   }
 
+  //creates new div to hold recipe inputted
   for (let i = 0; i < arr.length; i++){
     const newRecipe = document.createElement("div");
 
@@ -19,14 +20,17 @@ function displayRecipe(arr){
 
     recipesContainer.appendChild(newRecipe);
 
+    //creates a delete button for each recipe
     let deleteButtons = document.getElementsByClassName("delete-button");
 
+    //deletes recipe when button is clicked
     for (let i = 0; i < deleteButtons.length; i++){
       deleteButtons[i].addEventListener('click', deleteRecipe)
     }
   }
 }
 
+//function to delete recipe from server and then return updated list
 const deleteRecipe = (e) => {
   axios.delete(`http://localhost:4000/api/recipe/${e.target.id.value}`)
     .then((res) => {
@@ -34,6 +38,7 @@ const deleteRecipe = (e) => {
     });
 }
 
+//when recipe is submitted, it is sent to the server
 recipeInput.addEventListener('submit', (e) => {
   e.preventDefault();
 

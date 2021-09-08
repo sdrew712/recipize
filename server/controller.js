@@ -2,6 +2,7 @@ let recipeId = 1;
 const recipeList = [];
 
 module.exports = {
+  //pushes recipes to list to be stored in backend and then sent to frontend to be displayed
   displayRecipe: (req, res) => {
     const { name, ingredients, instructions } = req.body;
 
@@ -17,6 +18,7 @@ module.exports = {
     res.status(200).send(recipeList);
   },
 
+  //deletes recipes from list and then sends list to frontend to be displayed
   deleteRecipe: (req, res) => {
     const { id } = req.params;
 

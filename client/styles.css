@@ -244,8 +244,8 @@ button:hover{
   font-size: 1.25rem;
 }
 
-#recipe-input > input {
-  width: 150%;
+#recipe-input > textarea {
+  /* width: 150%; */
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -260,10 +260,6 @@ button:hover{
 
 .recipe > p{
   padding-bottom: 2rem;
-}
-
-#ingredients-input, #instructions-input{
-  height: 8rem;
 }
 
 #recipe-display{
