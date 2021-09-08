@@ -254,6 +254,10 @@ button:hover{
   margin-top: 2rem;
 }
 
+.recipe{
+  padding: 4rem 8rem 0 8rem;
+}
+
 .recipe > p{
   padding-bottom: 2rem;
 }
